@@ -24,11 +24,21 @@
 
 #ifndef DigitalToggle_h
 #define DigitalToggle_h
-#include <pins_arduino.h>
-#include <Arduino.h>
 
+#include <pins_arduino.h>
+
+ #if defined(ARDUINO) && ARDUINO >= 100
+	#include <Arduino.h>
+#else
+	#include <WProgram.h>
+#endif
+
+// #include <inttypes.h>
+ 
 
 #define digitalToggleFast(P) *portInputRegister(digitalPinToPort(P)) = digitalPinToBitMask(P)
+
+void pinModedigitalToggle(uint8_t P, uint8_t mode);
 
 void digitalToggle(uint8_t P);
 

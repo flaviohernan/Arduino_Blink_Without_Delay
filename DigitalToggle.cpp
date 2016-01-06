@@ -25,7 +25,8 @@
 #include "DigitalToggle.h"
 
 // Store the last millis callback 
-unsigned long DigitalToggle_H_MillisOld = 0;
+// think other manner to store this values
+unsigned long DigitalToggle_H_MillisOldVect[53];
 
 void digitalToggle(uint8_t P)
 {
@@ -35,10 +36,10 @@ void digitalToggle(uint8_t P)
 void digitalToggleDelay(unsigned long D, uint8_t P)
 {
 
-	if (millis() - DigitalToggle_H_MillisOld >= D)
+	if (millis() - DigitalToggle_H_MillisOldVect[P-1] >= D)
 	{
 		digitalToggle(P);
 
-		DigitalToggle_H_MillisOld = millis();
+		DigitalToggle_H_MillisOldVect[P-1] = millis();
 	}	
 }
