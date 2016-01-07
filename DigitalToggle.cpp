@@ -26,7 +26,6 @@
 
 // Store the last millis callback 
 // think other manner to store this values
-
 unsigned long DigitalToggle_H_MillisOldVect[NUM_DIGITAL_PINS - NUM_ANALOG_INPUTS];
 
 void digitalToggle(uint8_t P)
@@ -34,7 +33,7 @@ void digitalToggle(uint8_t P)
   *portInputRegister(digitalPinToPort(P)) = digitalPinToBitMask(P);
 }
 
-void digitalToggleDelay(unsigned long D, uint8_t P)
+void digitalToggleDelay(uint8_t P, unsigned long D)
 {
 
 	if (millis() - DigitalToggle_H_MillisOldVect[P] >= D)

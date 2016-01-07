@@ -32,7 +32,7 @@
  * produces an output with a user defined period in 
  * millisecond or frequency (frequency = 1/period).
  * 
- *    digitalToggleDelay(value_delay_ms, ledPin);
+ *    digitalToggleDelay(ledPin,value_delay_ms);
  *
  */
 #include <DigitalToggle.h>
@@ -44,5 +44,5 @@ void setup() {
 }
 
 void loop(){
-  digitalToggleDelay(500, LED13);
+  digitalToggleDelay(LED13, 500);
 }
