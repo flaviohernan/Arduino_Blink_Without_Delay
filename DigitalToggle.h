@@ -35,8 +35,6 @@
 
 #define digitalToggleFast(P) *portInputRegister(digitalPinToPort(P)) = digitalPinToBitMask(P)
 
-void pinModedigitalToggle(uint8_t P, uint8_t mode);
-
 void digitalToggle(uint8_t P);
 
 void digitalToggleDelay(uint8_t P, unsigned long D);
