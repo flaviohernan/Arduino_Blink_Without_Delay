@@ -62,7 +62,7 @@ void loop(){
 	
 	delay(100);
 	toggle(LED11);
-	toggleFast(LED12)
+	toggleFast(LED12);
 	toggleMillis(LED13, 200);
 }
 
