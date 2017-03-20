@@ -12,9 +12,9 @@
 # Methods and Functions (KEYWORD2)
 #######################################
 
-digitalToggle	KEYWORD2
-digitalToggleFast	KEYWORD2
-digitalToggleDelay	KEYWORD2
+toggle	KEYWORD2
+toggleFast	KEYWORD2
+toggleMillis	KEYWORD2
 
 #######################################
 # Instances (KEYWORD2)
