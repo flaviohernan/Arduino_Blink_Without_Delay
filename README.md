@@ -1,11 +1,11 @@
 # ToggleMillis
 
-. toggle()  
+. toggle(Pin)  
 *Toggle a pin*
 
-. toggleFast()  
+. toggleFast(Pin)  
 *Toggle a pin in Fast mode*
 
-. toggleMillis()  
+. toggleMillis(Pin, time_ms);  
 *Toggle a pin using millis(), without blocking delay*
 
