@@ -1,7 +1,11 @@
-# Arduino Blink Without Delay
+# ToggleMillis
 
-To download click the **Download ZIP** button in the top right corner, rename the uncompressed folder DigitalToggle. Check that the DigitalToggle folder contains DigitalToggle.cpp and DigitalToggle.h. Place the DigitalToggle library folder your **arduino_folder/hardware/libraries/** folder. You may need to create the libraries subfolder if its your first library. Restart the IDE.
+. toggle()
+Toggle a pin
 
-# More informations and base files
+. toggleFast()
+Toggle a pin in Fast mode
 
-http://playground.arduino.cc/Code/DigitalToggle
+. toggleMillis
+Toggle a pin without blocking delay(), internally use of millis()
+
