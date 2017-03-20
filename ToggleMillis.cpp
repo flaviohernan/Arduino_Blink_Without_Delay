@@ -8,7 +8,7 @@
  * Copyright (c) 2016 Flavio Hernan F. Nunes.  All right reserved.
  *
  * ToggleMillis.h - A simple lightweight pin toggle utility library
- * v0.3.0 - 2017-Mar-20
+ * v1.0.0 - 2017-Mar-20
  * Copyright (c) Testato.  All right reserved.
  *
  * This library is free software; you can redistribute it and/or
